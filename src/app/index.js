@@ -6,12 +6,14 @@
 
 'use strict'
 import './styles/styles.scss';
+import 'bootstrap';
 
 
 import { createTemplateFooter } from './views/createTemplateFooter';
 import {clickImage} from './utils/listenerCharacter';
 import {clickRandom} from './utils/listenerRandom';
 import {clickSearch} from './utils/listenerSearch';
+import {scrollFunction} from './utils/backToTopButton'
 
 
 
@@ -19,6 +21,7 @@ import {clickSearch} from './utils/listenerSearch';
 clickImage();
 clickRandom();
 clickSearch();
+scrollFunction()
 
 
 
