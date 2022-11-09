@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Dragon Ball Super Characters Page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer">
+  </head>
+  <body>
+    <header class="header">
+      <h1 class="header__title">Pagina de Personajes de Dragon Ball Super</h1>
+      <div class="header__container">
+        <img
+          src="assets/dragon_Ball_Super.png"
+          alt="Logo Dragon Ball"
+          class="header__container_image"
+        />
+      </div>
+    </header>
+    <main class="main">
+      <div class="main__selection">
+        <div class="main__selection_character">
+          <h2>Click en la Imagen para Mostrar los Personajes</h2>
+          <img src="assets/dragon_ball_super_characters.jpg" alt="Lista Personajes DB Super" class="characterListener">
+        </div>
+        <div class="main__selection_search">
+          <h2>Busca un personaje</h2>
+          <div class="wrap">
+            <input type="text" placeholder="Personaje a Buscar">
+            <button type="button"><img src="assets/kinton.jpg" alt="Foto Nube Kinton"> </button>
+          </div>
+        </div>
+        <div class="main__selection_character">
+          <h2>Clicka la Imagen para Aleatorio</h2>
+          <img src="assets/random_character.jpg" alt="Lista Personajes DB Super" class="characterListenerRandom">
+        </div>
+      </div>
+      <div class="main__template" ></div>
+    </main>
+    <footer class="footer">
+      <div class="footer__container">
+        <p class="footer__container_content"></p>
+        <p class="footer__container_content"><a href="https://dragon-ball-super-api.herokuapp.com/">WEB DE LA API</a></p>
+        <p class="footer__container_content"><a href="https://github.com/torresmald"> <span><i class="fa-brands fa-github"></i></span> SIGUE MIS PROYECTOS!</a></p>
+      </div>
+    </footer>
+  </body>
+</html>

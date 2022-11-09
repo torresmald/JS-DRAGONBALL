@@ -1,0 +1,11 @@
+.footer{
+    &__container{
+        &_content{
+            color: $colorTextDB;
+            font-family: DragonBallFont;
+            font-size: 30px;
+            text-align: center;
+            text-decoration: none;
+        }
+    }
+}
