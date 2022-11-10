@@ -4,7 +4,7 @@
 'use strict'
 import { responseCharacters } from "../api/callApiCharacters"
 
-const resultCharacters= responseCharacters.then((characters) => createTemplateFooter(characters))
+const resultCharacters = responseCharacters.then((characters) => createTemplateFooter(characters))
     
 export const createTemplateFooter = (characters) => {
     let countAlive = 0;
