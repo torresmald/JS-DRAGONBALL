@@ -1,23 +1,22 @@
-//Get the button
-let mybutton = document.getElementById("btn-back-to-top");
+//* CUANDO EL USUARIO HACE SCROLL DE MÁS DE 20PX, MUESTRA EL BOTON.
+//* CUANDO SE HACE CLICK SOBRE EL BOTÓN, VOLVEMOS AL TOP DEL DOCUMENTO. 
 
-// When the user scrolls down 20px from the top of the document, show the button
+let button$$ = document.querySelector('.toTop')
+
+
 window.onscroll = function () {
   scrollFunction();
 };
 
 export function scrollFunction() {
-  if (
-    document.body.scrollTop > 20 ||
-    document.documentElement.scrollTop > 20
-  ) {
-    mybutton.style.display = "block";
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    button$$.style.display = "block";
   } else {
-    mybutton.style.display = "none";
+    button$$.style.display = "none";
   }
 }
-// When the user clicks on the button, scroll to the top of the document
-mybutton.addEventListener("click", backToTop);
+
+button$$.addEventListener("click", backToTop);
 
 function backToTop() {
   document.body.scrollTop = 0;

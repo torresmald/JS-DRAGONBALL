@@ -24,6 +24,7 @@ export const createTemplateRandom = (characters) => {
 
     div$$.style.justifyContent = 'center';
     characterCard$$.classList.add('main__template_card');
+    divText$$.classList.add('divText')
     main$$.appendChild(div$$);
     div$$.appendChild(characterCard$$);
     characterCard$$.appendChild(img$$);

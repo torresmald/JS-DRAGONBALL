@@ -13,7 +13,8 @@ import { createTemplateFooter } from './views/createTemplateFooter';
 import {clickImage} from './utils/listenerCharacter';
 import {clickRandom} from './utils/listenerRandom';
 import {clickSearch} from './utils/listenerSearch';
-import {scrollFunction} from './utils/backToTopButton'
+import {scrollFunction} from './utils/backToTopButton';
+import {resetPage} from './utils/reset';
 
 
 
@@ -21,7 +22,8 @@ import {scrollFunction} from './utils/backToTopButton'
 clickImage();
 clickRandom();
 clickSearch();
-scrollFunction()
+scrollFunction();
+
 
 
 

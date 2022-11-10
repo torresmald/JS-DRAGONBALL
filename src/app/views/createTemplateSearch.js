@@ -29,6 +29,7 @@ export const createTemplateSearch = (characters) => {
         
         const main$$ = document.querySelector('.main');
         characterCard$$.classList.add('main__template_card');
+        divText$$.classList.add('divText');
         main$$.appendChild(div$$);
         div$$.appendChild(characterCard$$);
         characterCard$$.appendChild(img$$);

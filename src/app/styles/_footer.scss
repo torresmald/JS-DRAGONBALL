@@ -8,4 +8,12 @@
             text-decoration: none;
         }
     }
+    .toTop {
+        position: fixed;
+        bottom: 50px;
+        right: 50px;
+        color: white;
+        background-color: black;
+        font-size: 30px;
+      }
 }
