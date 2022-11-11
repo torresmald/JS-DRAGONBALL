@@ -1,4 +1,4 @@
-//* CUANDO EL USUARIO HACE SCROLL DE MÁS DE 20PX, MUESTRA EL BOTON, SINO ESTÁ DISPLAY NONE.
+//* CUANDO EL USUARIO HACE SCROLL DE MÁS DE 500PX, MUESTRA EL BOTON, SINO ESTÁ DISPLAY NONE.
 //* CUANDO SE HACE CLICK SOBRE EL BOTÓN, VOLVEMOS AL TOP DEL DOCUMENTO. 
 
 let button$$ = document.querySelector('.toTop');
@@ -9,7 +9,7 @@ window.onscroll = function () {
 };
 
 export const scrollFunction = () => {
-  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+  if (document.body.scrollTop > 500 || document.documentElement.scrollTop > 500) {
     button$$.style.display = "block";
   } else {
     button$$.style.display = "none";
