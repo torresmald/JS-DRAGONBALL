@@ -9,7 +9,6 @@
   </head>
   <body>
     <header class="header">
-      <h1 class="header__title">Pagina de Personajes de Dragon Ball Super</h1>
       <div class="header__container">
         <img
           src="assets/dragon_Ball_Super.png"
@@ -21,7 +20,7 @@
     <main class="main">
       <div class="main__selection">
         <div class="main__selection_character">
-          <h2>Clicka para Mostrar los Personajes</h2>
+          <h2>Lista Personajes</h2>
           <img src="assets/dragon_ball_super_characters.jpg" alt="Lista Personajes DB Super" class="characterListener">
         </div>
         <div class="main__selection_search">
@@ -31,9 +30,17 @@
             <button type="button"><img src="assets/kinton.jpg" alt="Foto Nube Kinton"> </button>
             <button type="button" id="reset"><img src="assets/clean.png" alt="Logo Clean"></img></button>
           </div>
+          <div class="leyend">
+            <h2>LEYENDA: </h2>
+            <p>ANGELES: <span class="leyend__angels">color</span><span id="angels"></span></p>
+            <p>SAIYANS: <span class="leyend__saiyans">color</span>
+              <span id="saiyans"></span></p>
+            <p>CYBORGS: <span class="leyend__cyborgs">color</span>  <span id="cyborgs"></span></p>
+            <p>MUERTOS: <span class="leyend__deads">color</span>  <span id="deads"></span></p>
+          </div>
         </div>
         <div class="main__selection_character">
-          <h2>Clicka para Aleatorio</h2>
+          <h2>Aleatorio</h2>
           <img src="assets/random.jpg" alt="Lista Personajes DB Super" class="characterListenerRandom">
         </div>
       </div>

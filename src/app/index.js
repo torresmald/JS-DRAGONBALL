@@ -7,16 +7,13 @@
 'use strict'
 import './styles/styles.scss';
 import 'bootstrap';
-
-
+import { createTemplateCounters } from './views/createTemplateCounters';
 import { createTemplateFooter } from './views/createTemplateFooter';
 import {clickImage} from './utils/listenerCharacter';
 import {clickRandom} from './utils/listenerRandom';
 import {clickSearch} from './utils/listenerSearch';
 import {scrollFunction} from './utils/backToTopButton';
 import {resetPage} from './utils/reset';
-
-
 
 
 clickImage();

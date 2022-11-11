@@ -13,6 +13,7 @@ const search$$ = document.querySelector('.main__selection_search');
 
 
 export const createTemplateSearch = (characters) => {
+    
     div$$.innerHTML = '';
     const filtered = characters.filter((character) => {
         return character.name.toLowerCase().includes(input$$.value);
@@ -35,7 +36,7 @@ export const createTemplateSearch = (characters) => {
         characterCard$$.appendChild(img$$);
         characterCard$$.appendChild(divText$$);
 
-        
+
         divText$$.appendChild(id$$);
         divText$$.appendChild(name$$);
         divText$$.appendChild(role$$);
