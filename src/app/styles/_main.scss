@@ -47,30 +47,29 @@
           }
         }
       }
-      .leyend{
-        
+      .leyend {
         font-size: 20px;
         font-family: DragonBallFont;
         color: $colorTextDB;
-        
-        h2{
+
+        h2 {
           margin: 20px 0;
         }
-        &__angels{
-          background-color: #FFFDD1;
+        &__angels {
+          background-color: #fffdd1;
           width: 200px;
           display: inline-block;
           height: 30px;
           margin-right: 10px;
         }
-        &__saiyans{
-          background-color: #FFF200;
+        &__saiyans {
+          background-color: #fff200;
           width: 200px;
           display: inline-block;
           height: 30px;
           margin-right: 10px;
         }
-        &__cyborgs{
+        &__cyborgs {
           background-color: hsl(47, 14%, 67%);
           width: 200px;
           display: inline-block;
@@ -111,19 +110,19 @@
         padding-bottom: 50px;
       }
     }
-    .divText{
-        padding-top: 35px;
-        padding-left: 20px;
+    .divText {
+      padding-top: 35px;
+      padding-left: 20px;
     }
     .angel {
       border: 2px solid black;
       border-radius: 20px;
-      background-color: #FFFDD1;
+      background-color: #fffdd1;
     }
     .saiyan {
       border: 2px solid black;
       border-radius: 20px;
-      background-color: #FFF200;
+      background-color: #fff200;
     }
     .ciborg {
       border: 2px solid black;
@@ -147,6 +146,11 @@
     color: $colorTextDB;
     font-family: DragonBallFont;
     font-size: 20px;
+    &_character {
+      margin: auto;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
   }
 }
-

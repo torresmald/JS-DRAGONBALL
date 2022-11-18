@@ -10,6 +10,6 @@ import { responseCharacters } from "../api/callApiCharacters";
 export const clickImage = async () => {
     const imageListener$$ = document.querySelector('.characterListener');
     const listenerCharacters = imageListener$$.addEventListener('click',  () => {
-        responseCharacters.then((characters) => createTemplate(characters));
+        responseCharacters.then((array) => createTemplate(array));
         })
 }

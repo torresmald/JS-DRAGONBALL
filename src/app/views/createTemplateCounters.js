@@ -1,5 +1,5 @@
 'use strict'
-import { responseCharacters } from "../api/callApiCharacters"
+import { responseCharacters } from "../api/callApiCharacters";
 
 const resultCharacters = responseCharacters.then((characters) => createTemplateCounters(characters))
 

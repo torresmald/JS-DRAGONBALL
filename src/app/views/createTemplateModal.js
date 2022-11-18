@@ -1,18 +1,24 @@
-//* ESTRUCTURA QUE PINTA EN PANTALLA EL MODAL CON EL PERSONAJE SELECCIONADO EN 
-//* CREAMOS UN EVENTLISTENER PARA CLICKANDO EN CUALQUIER SITIO NOS LIMPIE LA PANTALLA. 
+//* ESTRUCTURA QUE PINTA EN PANTALLA EL MODAL CON EL PERSONAJE SELECCIONADO.
+//* CREAMOS UN EVENTLISTENER EL CUAL CLICKANDO EN CUALQUIER SITIO NOS LIMPIE LA PANTALLA. 
 
 'use strict'
 import { responseCharacters } from "../api/callApiCharacters"
-
+import { Character, DetailCharacter } from "../models/clases";
 
 
 const divModal$$ = document.createElement('div');
 divModal$$.classList.add('main__modal');
 
+
 export function createTemplateModal(character) {
 
+    const myDetailCharacter = new DetailCharacter(character.name, character.imageUrl, character.id, character.role, character.specie, character.originplanet);
     const main$$ = document.querySelector('.main');
+    const divCharacter$$ = document.createElement('div');
+    divCharacter$$.classList.add('main__modal_character');
     main$$.appendChild(divModal$$);
+    divModal$$.appendChild(divCharacter$$);
+    
 
     const img$$ = document.createElement('img');
     const name$$ = document.createElement('p');
@@ -21,20 +27,20 @@ export function createTemplateModal(character) {
     const role$$ = document.createElement('p');
     const specie$$ = document.createElement('p');
 
-    divModal$$.appendChild(img$$);  
-    divModal$$.appendChild(id$$);
-    divModal$$.appendChild(name$$);
-    divModal$$.appendChild(role$$);
-    divModal$$.appendChild(originplanet$$);
-    divModal$$.appendChild(specie$$);
+    divCharacter$$.appendChild(img$$);
+    divCharacter$$.appendChild(id$$);
+    divCharacter$$.appendChild(name$$);
+    divCharacter$$.appendChild(role$$);
+    divCharacter$$.appendChild(originplanet$$);
+    divCharacter$$.appendChild(specie$$);
 
-    img$$.src = character.imageUrl;
-    name$$.textContent = `Name: ${character.name}`;
-    id$$.textContent = `ID: ${character.id}`;
-    name$$.textContent = `Name: ${character.name}`;
-    role$$.textContent = `Role: ${character.role}`;
-    originplanet$$.textContent = `Origin Planet: ${character.originplanet}`;
-    specie$$.textContent = `Specie: ${character.specie}`;
+    img$$.src = myDetailCharacter.getCharactersImg();
+    name$$.textContent = `Name: ${myDetailCharacter.getCharactersName()}`;
+    id$$.textContent = `ID: ${myDetailCharacter.getCharactersId()}`;
+    name$$.textContent = `Name: ${myDetailCharacter.getCharactersName()}`;
+    role$$.textContent = `Role: ${myDetailCharacter.getCharactersRole()}`;
+    originplanet$$.textContent = `Origin Planet: ${myDetailCharacter.getCharactersOrigin()}`;
+    specie$$.textContent = `Specie: ${myDetailCharacter.getCharactersSpecie()}`;
 
     divModal$$.addEventListener('click', () => {
         divModal$$.innerHTML = '';
